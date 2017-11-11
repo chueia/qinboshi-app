@@ -1,4 +1,143 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0
+}
+
 body {
-  background: #eee;
-  font-size:12px;
+    font: 12px"宋体", "Arial Narrow", HELVETICA;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #2d374b;
+    text-decoration: none
+}
+
+a:hover {
+    color: #cd0200;
+    text-decoration: underline
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+//logo页面
+.logo {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//login页面
+main.login {
+    background: #83af9b;
+    width: 100%;
+    height: 100%;
+    display: block;
+    .main-title {
+        width: 100%;
+        margin-top: 5em;
+    }
+    .text {
+        padding: 2em 2em;
+        .tips {
+            font-size: 1.8em;
+            color: #e0f6e0;
+            font-family: "华康方圆体W7(P)";
+        }
+        .login-box {
+            font-family: '苹方';
+            margin-top: 1em;
+            position: relative;
+            img {
+                width: 0.29rem;
+                position: absolute;
+                left: 0.4rem;
+                top: 30%;
+            }
+            .phone {
+                width: -webkit-fill-available;
+            }
+            input {
+                font-size: 0.4rem;
+                border: 3px solid #c8c8a9;
+                border-radius: 20px;
+                height: 1.2rem;
+                line-height: 1.2rem;
+                padding-left: 1rem;
+                background: white;
+            }
+            span {
+                height: 1.2rem;
+                display: inline-block;
+                line-height: 1.2rem;
+                border-radius: 20px;
+                padding: 0 0.4rem;
+                text-align: center;
+                font-size: 0.46rem;
+            }
+            .get-code {
+                background: #c8c8a9;
+                color: white;
+                font-weight: bold;
+            }
+            .login-button {
+                color: white;
+                font-weight: bold;
+                background: #e08031;
+                width:100%;
+                margin-top:0.8rem;
+            }
+            .information{
+                 color: #000000;
+                 font-size: 0.3rem;
+                 width:100%;
+            }
+        }
+    }
 }
