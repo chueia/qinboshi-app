@@ -115,4 +115,52 @@ main.login {
         font-size: 0.3rem;
         width: 100%; }
 
+.index .header {
+  display: fix;
+  top: 0;
+  background: #83af9b;
+  height: 1.2rem; }
+  .index .header .navbar, .index .header .subnavbar, .index .header .toolbar {
+    background: #83af9b; }
+  .index .header .navbar, .index .header .toolbar {
+    height: 1.2rem; }
+    .index .header .navbar .left img, .index .header .toolbar .left img {
+      width: 1.066rem; }
+    .index .header .navbar .right img, .index .header .toolbar .right img {
+      width: 0.7rem; }
+    .index .header .navbar .center, .index .header .toolbar .center {
+      color: white;
+      font-family: '苹方'; }
+
+.swiper-wrapper img {
+  width: 100%; }
+
+.clear {
+  clear: both;
+  height: 1px;
+  display: block; }
+
+.main {
+  padding: 0 0.267rem;
+  background: #e0dbe0; }
+  .main .box {
+    background: white;
+    margin: 0.267rem 0; }
+    .main .box a {
+      display: block; }
+      .main .box a img {
+        width: 100%; }
+  .main .box-title {
+    padding: 0.267rem 0.267rem;
+    position: relative; }
+    .main .box-title span {
+      font-size: 0.47rem;
+      vertical-align: middle; }
+    .main .box-title a.right {
+      position: absolute;
+      right: 0.2rem;
+      bottom: 0.2rem; }
+      .main .box-title a.right span {
+        font-size: 0.32rem; }
+
 /*# sourceMappingURL=app.css.map */
