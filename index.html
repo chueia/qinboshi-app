@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Document</title>
     <link rel="stylesheet" href="css/framework7.ios.min.css">
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
@@ -12,7 +14,8 @@
 </head>
 
 <body>
-    <div class="index">
+    <!-- 首页 -->
+    <div class="index tab-1 ">
         <div class="header">
             <div class="navbar">
                 <div class="navbar-inner">
@@ -34,9 +37,15 @@
 
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide"><img src="img/banner1.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/banner1.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/banner1.png" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="img/banner1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner1.png" alt="">
+                </div>
 
             </div>
 
@@ -53,18 +62,83 @@
             <div class="box box-title">
                 <img src="img/hot.png" alt="">
                 <span>热门推荐</span>
-                <a  class="right link" href="#">
+                <a class="right link" href="#">
                     <span>全部商品 ></span>
                 </a>
             </div>
-            <div class="box">
+            <div class="box box-goods">
                 <div class="goods">
-                    
+                    <img src="./img/goods.png" alt="">
+                    <span class="price">3680</span>
+                    <span class="numbers">已售:3425</span>
+                </div>
+            </div>
+
+            <div class="box box-goods">
+                <div class="goods">
+                    <img src="./img/goods2.png" alt="">
+                    <span class="price">3680</span>
+                    <span class="numbers">已售:2465</span>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- 商品页 -->
+    <div class="index tab-2 show">
+        <div class="header">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a href="#" class="link">
+                            <img src="img/head.png" alt="">
+                        </a>
+                    </div>
+                    <div class="center">
+                        <input type="search" placeholder="请输入商品名称">
+                        <img class="icon-search" src="./img/icon-search.png" alt="">
+                        <span class="input-search">搜索</span>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="link">
+                            <img src="img/share.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-left">
+                <img src="./img/img1.jpg" alt="">
+            </div>
+            <div class="box-right">
+                <h2>全年套餐</h2>
+                <span class="icon-right">></span>
+                <p>含<i>36</i>盒西泉谷元子蛋(<i>30</i>枚礼盒装)，每<i>10</i>天送货 上门，套餐结束返套餐金额<i>40%</i>，建议<i>1</i>人使用。
+                </p>
+                <span class="tips1">全年包送</span>
+                <span class="tips2">返积分</span>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="toolbar tabbar tabbar-labels hide">
+        <div class="toolbar-inner">
+            <a href="#tab1" class="tab-link tab-link1 ">
+                <img src="./img/navbar1-h.png" alt="">
+            </a>
+            <a href="#tab3" class="tab-link tab-link3">
+                <img src="./img/navbar2.png" alt="">
+            </a>
+            <a href="#tab4" class="tab-link tab-link4">
+                <img src="./img/navbar3.png" alt="">
+            </a>
+            <a href="#tab4" class="tab-link tab-link5">
+                <img src="./img/navbar4.png" alt="">
+            </a>
+        </div>
+    </div>
 
 
     <script src="./js/jquery-3.2.1.min.js"></script>

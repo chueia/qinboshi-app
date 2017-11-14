@@ -28,7 +28,8 @@ select {
 body {
   font: 12px "宋体", "Arial Narrow", HELVETICA;
   background: #fff;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  overflow: auto !important; }
 
 a {
   color: #2d374b;
@@ -115,22 +116,34 @@ main.login {
         font-size: 0.3rem;
         width: 100%; }
 
-.index .header {
-  display: fix;
-  top: 0;
-  background: #83af9b;
-  height: 1.2rem; }
-  .index .header .navbar, .index .header .subnavbar, .index .header .toolbar {
-    background: #83af9b; }
-  .index .header .navbar, .index .header .toolbar {
+.index {
+  margin-bottom: 1.213rem;
+  display: none; }
+  .index .header {
+    display: fix;
+    top: 0;
+    background: #83af9b;
     height: 1.2rem; }
-    .index .header .navbar .left img, .index .header .toolbar .left img {
-      width: 1.066rem; }
-    .index .header .navbar .right img, .index .header .toolbar .right img {
-      width: 0.7rem; }
-    .index .header .navbar .center, .index .header .toolbar .center {
-      color: white;
-      font-family: '苹方'; }
+    .index .header .navbar,
+    .index .header .subnavbar,
+    .index .header .toolbar {
+      background: #83af9b; }
+    .index .header .navbar,
+    .index .header .toolbar {
+      height: 1.2rem; }
+      .index .header .navbar .left img,
+      .index .header .toolbar .left img {
+        width: 1.066rem; }
+      .index .header .navbar .right img,
+      .index .header .toolbar .right img {
+        width: 0.7rem; }
+      .index .header .navbar .center,
+      .index .header .toolbar .center {
+        color: white;
+        font-family: '苹方'; }
+
+.index.show {
+  display: block; }
 
 .swiper-wrapper img {
   width: 100%; }
@@ -145,13 +158,32 @@ main.login {
   background: #e0dbe0; }
   .main .box {
     background: white;
-    margin: 0.267rem 0; }
+    margin: 0.1rem 0; }
     .main .box a {
       display: block; }
       .main .box a img {
         width: 100%; }
+    .main .box .goods {
+      height: 3.5rem;
+      position: relative; }
+      .main .box .goods img {
+        width: 100%; }
+      .main .box .goods .price {
+        position: absolute;
+        bottom: 0.1rem;
+        right: 3.5rem;
+        font-size: 0.565rem;
+        color: #00bdaa;
+        font-weight: bold; }
+      .main .box .goods .numbers {
+        position: absolute;
+        bottom: 0.2rem;
+        right: 0.5rem;
+        color: #585858;
+        font-size: 0.284rem; }
   .main .box-title {
     padding: 0.267rem 0.267rem;
+    margin-top: 0.267rem;
     position: relative; }
     .main .box-title span {
       font-size: 0.47rem;
@@ -162,5 +194,74 @@ main.login {
       bottom: 0.2rem; }
       .main .box-title a.right span {
         font-size: 0.32rem; }
+
+.toolbar {
+  position: fixed;
+  bottom: 0;
+  height: 1.5rem !important; }
+  .toolbar .toolbar-inner a img {
+    width: 0.83rem; }
+
+.tab-2 .center {
+  position: relative; }
+  .tab-2 .center input {
+    width: 6rem;
+    height: 0.77rem;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding-left: 0.8rem; }
+  .tab-2 .center .icon-search {
+    position: absolute;
+    width: 0.373rem;
+    left: 0.3rem; }
+  .tab-2 .center .input-search {
+    font-weight: normal;
+    margin-left: 0.2rem; }
+.tab-2 .box {
+  height: 3rem;
+  border-top: 1px solid #ddd;
+  padding: 0.41rem 0.44rem; }
+  .tab-2 .box .box-left {
+    width: 2.8rem;
+    display: inline-block; }
+    .tab-2 .box .box-left img {
+      width: 100%; }
+  .tab-2 .box .box-right {
+    display: inline-block;
+    margin-left: 0.53rem;
+    width: 5.66rem;
+    height: 100%;
+    float: right; }
+    .tab-2 .box .box-right h2 {
+      font-size: 0.373rem;
+      color: #000;
+      display: inline-block; }
+    .tab-2 .box .box-right p {
+      font-size: 0.266rem;
+      margin-top: 0.1rem; }
+      .tab-2 .box .box-right p i {
+        color: #00bdaa;
+        font-style: normal; }
+    .tab-2 .box .box-right .icon-right {
+      float: right;
+      font-size: 0.5rem;
+      font-weight: bold; }
+    .tab-2 .box .box-right .tips1 {
+      border: 1px solid #0a94ff;
+      border-radius: 5px;
+      padding: 3px;
+      color: #0a94ff;
+      font-size: 0.32rem;
+      margin-top: 0.1rem;
+      display: inline-block; }
+    .tab-2 .box .box-right .tips2 {
+      border: 1px solid #3dd93d;
+      border-radius: 5px;
+      padding: 3px;
+      color: #3dd93d;
+      font-size: 0.32rem;
+      margin-top: 0.1rem;
+      display: inline-block; }
 
 /*# sourceMappingURL=app.css.map */
