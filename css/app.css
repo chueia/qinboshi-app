@@ -219,20 +219,21 @@ main.login {
     font-weight: normal;
     margin-left: 0.2rem; }
 .tab-2 .box {
-  height: 3rem;
+  height: 3.8rem;
   border-top: 1px solid #ddd;
-  padding: 0.41rem 0.44rem; }
+  padding: 0.41rem 0.22rem; }
   .tab-2 .box .box-left {
-    width: 2.8rem;
+    width: 3.5rem;
     display: inline-block; }
     .tab-2 .box .box-left img {
-      width: 100%; }
+      width: 100%;
+      height: 2.8rem; }
   .tab-2 .box .box-right {
     display: inline-block;
-    margin-left: 0.53rem;
     width: 5.66rem;
     height: 100%;
-    float: right; }
+    float: right;
+    position: relative; }
     .tab-2 .box .box-right h2 {
       font-size: 0.373rem;
       color: #000;
@@ -250,7 +251,7 @@ main.login {
     .tab-2 .box .box-right .tips1 {
       border: 1px solid #0a94ff;
       border-radius: 5px;
-      padding: 3px;
+      padding: 2px;
       color: #0a94ff;
       font-size: 0.32rem;
       margin-top: 0.1rem;
@@ -258,10 +259,132 @@ main.login {
     .tab-2 .box .box-right .tips2 {
       border: 1px solid #3dd93d;
       border-radius: 5px;
-      padding: 3px;
+      padding: 2px;
       color: #3dd93d;
       font-size: 0.32rem;
       margin-top: 0.1rem;
       display: inline-block; }
+    .tab-2 .box .box-right .price {
+      position: absolute;
+      bottom: 0.0rem;
+      right: 4.15rem;
+      font-size: 0.565rem;
+      color: #00bdaa;
+      font-weight: bold; }
+      .tab-2 .box .box-right .price i {
+        font-style: normal;
+        font-size: 0.2rem; }
+    .tab-2 .box .box-right .numbers {
+      position: absolute;
+      bottom: 0.1rem;
+      right: 0.5rem;
+      color: #585858;
+      font-size: 0.284rem; }
+
+.order {
+  background: #e0dbe0;
+  height: 100%; }
+  .order .box {
+    padding: 0.133rem 0;
+    background: white;
+    margin-bottom: 0.1rem; }
+    .order .box .top {
+      padding: 0 0.573rem;
+      line-height: 0.6rem; }
+      .order .box .top p {
+        font-size: 0.33rem;
+        display: inline-block;
+        font-weight: bold; }
+      .order .box .top span {
+        float: right; }
+    .order .box .middle {
+      padding: 0.133rem 0.573rem;
+      height: 1.867rem;
+      background: #f5f5f5; }
+      .order .box .middle .left {
+        display: inline-block; }
+        .order .box .middle .left img {
+          width: 1.73rem; }
+      .order .box .middle .right {
+        display: inline-block;
+        width: 6rem;
+        vertical-align: middle;
+        margin-left: 0.5rem; }
+        .order .box .middle .right p {
+          font-size: 0.266rem;
+          margin-top: 0.2rem; }
+          .order .box .middle .right p i {
+            font-style: normal;
+            color: #00bdaa; }
+    .order .box .bottom p {
+      padding: 0.133rem 0.573rem;
+      display: block;
+      font-size: 0.333rem;
+      font-weight: bold;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      text-align: right;
+      border-bottom: 1px solid #ddd; }
+    .order .box .bottom .box-message {
+      height: 0.8rem;
+      width: 100%;
+      padding: 0.133rem 0.573rem;
+      margin-top: 0.1rem; }
+      .order .box .bottom .box-message .left {
+        text-align: left;
+        display: inline-block; }
+      .order .box .bottom .box-message .right {
+        text-align: right;
+        display: inline-block; }
+        .order .box .bottom .box-message .right span {
+          border: 1px solid #00bdaa;
+          color: #00bdaa;
+          padding: 5px;
+          border-radius: 5px; }
+
+.tab-4 {
+  background: #e0dbe0; }
+  .tab-4 .navbar:after {
+    display: none; }
+  .tab-4 .header {
+    height: 5.86rem;
+    position: relative; }
+    .tab-4 .header .header-img {
+      width: 2.86rem;
+      height: 2.86rem;
+      position: absolute;
+      top: 1rem;
+      left: 3.5rem;
+      text-align: center; }
+      .tab-4 .header .header-img span {
+        color: white;
+        font-size: 0.55rem;
+        margin-top: 0.2rem;
+        display: block; }
+      .tab-4 .header .header-img img {
+        width: 100%;
+        border-radius: 100%;
+        border: 0.1rem solid white; }
+  .tab-4 .box {
+    margin-top: 0.2rem;
+    background: white; }
+    .tab-4 .box .link {
+      height: 1.33rem;
+      line-height: 1.33rem;
+      padding: 0 0.67rem;
+      position: absolute;
+      width: 100%; }
+      .tab-4 .box .link .icon {
+        width: 0.56rem; }
+      .tab-4 .box .link span {
+        font-size: 0.467rem;
+        color: #000;
+        vertical-align: middle;
+        font-weight: bold; }
+      .tab-4 .box .link .icon-right {
+        position: absolute;
+        right: 0.8rem;
+        top: 0.48rem;
+        width: 0.227rem; }
 
 /*# sourceMappingURL=app.css.map */

@@ -282,20 +282,24 @@ main.login {
         }
     }
     .box{
-        height:3rem;
+        height:3.8rem;
         border-top:1px solid #ddd;
-        padding:0.41rem 0.44rem;
+        padding:0.41rem 0.22rem;
         .box-left{
-            width:2.8rem;
+            width:3.5rem;
             display:inline-block;
-            img{width:100%;}
+            img{
+                width:100%;
+                height:2.8rem;
+            }
         }
         .box-right{
             display:inline-block;
-            margin-left:0.53rem;
+            //margin-left:0.53rem;
             width:5.66rem;
             height:100%;
             float:right;
+            position: relative;
             h2{
                 font-size: 0.373rem;
                 color:#000;
@@ -318,21 +322,183 @@ main.login {
             .tips1{
                 border:1px solid #0a94ff;
                 border-radius: 5px;
-                padding:3px;
+                padding:2px;
                 color:#0a94ff;
-                font-size: 0.32rem;
+                font-size: 0.32rem; 
                 margin-top:0.1rem;
                 display:inline-block;
             }
             .tips2{
                 border:1px solid #3dd93d;
                 border-radius: 5px;
-                padding:3px;
+                padding:2px;
                 color:#3dd93d;
                 font-size: 0.32rem;
                 margin-top:0.1rem;
                 display:inline-block;
             }
+            .price{
+                position: absolute;
+                bottom:0.0rem;
+                right: 4.15rem;
+                font-size: 0.565rem;
+                color:#00bdaa;
+                font-weight: bold;
+                i{
+                    font-style: normal;
+                    font-size: 0.2rem;
+                }
+            }
+            .numbers{
+                position: absolute;
+                bottom:0.1rem;
+                right:0.5rem;
+                color:#585858;
+                font-size: 0.284rem;
+            }
+        }
+    }
+}
+//订单页
+.order{
+    background: #e0dbe0;
+    height:100%;
+    .box{
+        padding:0.133rem 0;
+        background: white;
+        margin-bottom:0.1rem;
+        .top{
+            padding:0 0.573rem;
+            line-height: 0.6rem;
+            p{
+                font-size: 0.33rem;
+                display:inline-block;
+                font-weight: bold;
+            }
+            span{
+                float:right;
+            }
+        }
+        .middle{
+            padding:0.133rem 0.573rem;
+           
+            height:1.867rem;
+            background: #f5f5f5;
+            .left{
+                display:inline-block;
+                img{
+                    width:1.73rem;
+                }
+            }
+            .right{
+                display:inline-block;
+                width:6rem;
+                vertical-align: middle;
+                margin-left:0.5rem;
+                p{
+                    font-size: 0.266rem;
+                    margin-top:0.2rem;
+                    i{
+                        font-style: normal;
+                        color:#00bdaa;
+                    }
+                }
+            }
+        }
+        .bottom{
+           
+           
+            p{
+                padding:0.133rem 0.573rem;
+                display:block;
+                font-size: 0.333rem;
+                font-weight: bold;
+                height:0.8rem;
+                line-height: 0.8rem;
+                text-align: right;
+                border-bottom:1px solid #ddd;
+            }
+            .box-message{
+                height:0.8rem;
+                width:100%;
+                padding:0.133rem 0.573rem;
+                margin-top: 0.1rem;
+                .left{
+                    text-align: left;
+                    display:inline-block;
+                }
+                .right{
+                    text-align: right;
+                    display:inline-block;
+                    span{
+                        border:1px solid #00bdaa;
+                        color:#00bdaa;
+                        padding:5px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+//个人页面
+.tab-4{
+    background: #e0dbe0;
+    .navbar:after{
+        display:none;
+    }
+    .header{
+        height:5.86rem;
+        position: relative;
+        .header-img{
+            width:2.86rem;
+            height:2.86rem;
+            position: absolute;
+            top: 1rem;
+            left: 3.5rem;
+            text-align: center;
+            span{
+               color:white;
+               font-size: 0.55rem;
+               margin-top:0.2rem;
+               display:block;
+            }
+           img{
+               width:100%;
+               border-radius:100%;
+               border:0.1rem solid white;
+           }
+            
+        }
+    }
+    .box{
+        margin-top:0.2rem;
+        background: white;
+        .link{
+            height:1.33rem;
+            line-height: 1.33rem;
+            padding:0 0.67rem;
+            position: absolute;
+            width:100%;
+            .icon{
+                width:0.56rem;
+            }
+            span{
+                font-size: 0.467rem;
+                color:#000;
+                vertical-align: middle;
+                font-weight: bold;
+            }
+            .icon-right{
+                position: absolute;
+                right: 0.8rem;
+                top: 0.48rem;
+                width: 0.227rem;
+
+            }
+        }
+        .asset{
+           
         }
     }
 }
