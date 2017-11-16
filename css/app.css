@@ -343,7 +343,8 @@ main.login {
           border-radius: 5px; }
 
 .tab-4 {
-  background: #e0dbe0; }
+  background: #e0dbe0;
+  min-height: 10rem; }
   .tab-4 .navbar:after {
     display: none; }
   .tab-4 .header {
@@ -367,24 +368,27 @@ main.login {
         border: 0.1rem solid white; }
   .tab-4 .box {
     margin-top: 0.2rem;
-    background: white; }
+    display: block; }
     .tab-4 .box .link {
       height: 1.33rem;
       line-height: 1.33rem;
       padding: 0 0.67rem;
-      position: absolute;
-      width: 100%; }
+      width: 100%;
+      background: white; }
       .tab-4 .box .link .icon {
         width: 0.56rem; }
       .tab-4 .box .link span {
         font-size: 0.467rem;
         color: #000;
         vertical-align: middle;
-        font-weight: bold; }
+        font-weight: bold;
+        margin-left: 1rem; }
       .tab-4 .box .link .icon-right {
         position: absolute;
         right: 0.8rem;
         top: 0.48rem;
         width: 0.227rem; }
+    .tab-4 .box .asset {
+      display: block; }
 
 /*# sourceMappingURL=app.css.map */
