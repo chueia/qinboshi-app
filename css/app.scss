@@ -444,6 +444,7 @@ main.login {
 //个人页面
 .tab-4{
     background: #e0dbe0;
+    min-height:10rem;
     .navbar:after{
         display:none;
     }
@@ -473,13 +474,15 @@ main.login {
     }
     .box{
         margin-top:0.2rem;
-        background: white;
+        
+        display:block;
         .link{
             height:1.33rem;
             line-height: 1.33rem;
             padding:0 0.67rem;
-            position: absolute;
+            
             width:100%;
+            background: white;
             .icon{
                 width:0.56rem;
             }
@@ -488,6 +491,7 @@ main.login {
                 color:#000;
                 vertical-align: middle;
                 font-weight: bold;
+                margin-left:1rem;
             }
             .icon-right{
                 position: absolute;
@@ -498,7 +502,7 @@ main.login {
             }
         }
         .asset{
-           
+           display:block;
         }
     }
 }
