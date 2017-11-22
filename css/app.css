@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "苹方"; }
 
 body,
 ol,
@@ -29,7 +30,8 @@ body {
   font: 12px "宋体", "Arial Narrow", HELVETICA;
   background: #fff;
   -webkit-text-size-adjust: 100%;
-  overflow: auto !important; }
+  overflow: auto !important;
+  background: #e0dbe0; }
 
 a {
   color: #2d374b;
@@ -117,7 +119,7 @@ main.login {
         width: 100%; }
 
 .index {
-  margin-bottom: 1.213rem;
+  margin-bottom: 1.613rem;
   display: none; }
   .index .header {
     display: fix;
@@ -154,7 +156,6 @@ main.login {
   display: block; }
 
 .main {
-  padding: 0 0.267rem;
   background: #e0dbe0; }
   .main .box {
     background: white;
@@ -199,8 +200,34 @@ main.login {
   position: fixed;
   bottom: 0;
   height: 1.5rem !important; }
-  .toolbar .toolbar-inner a img {
-    width: 0.83rem; }
+  .toolbar .toolbar-inner .tab-link span {
+    display: inline-block;
+    width: 0.83rem;
+    height: 1.5rem; }
+  .toolbar .toolbar-inner .tab-link1 span {
+    background: url("../img/navbar1.png") no-repeat;
+    background-size: 0.83rem; }
+  .toolbar .toolbar-inner .tab-link1.active span {
+    background: url("../img/navbar1-h.png") no-repeat;
+    background-size: 0.83rem; }
+  .toolbar .toolbar-inner .tab-link2 span {
+    background: url("../img/navbar2.png") no-repeat;
+    background-size: 0.83rem; }
+  .toolbar .toolbar-inner .tab-link2.active span {
+    background: url("../img/navbar2-h.png") no-repeat;
+    background-size: 0.83rem; }
+  .toolbar .toolbar-inner .tab-link3 span {
+    background: url("../img/navbar3.png") no-repeat;
+    background-size: 0.83rem; }
+  .toolbar .toolbar-inner .tab-link3.active span {
+    background: url("../img/navbar3-h.png") no-repeat;
+    background-size: 0.83rem; }
+  .toolbar .toolbar-inner .tab-link4 span {
+    background: url("../img/navbar4.png") no-repeat;
+    background-size: 0.83rem; }
+  .toolbar .toolbar-inner .tab-link4.active span {
+    background: url("../img/navbar4-h.png") no-repeat;
+    background-size: 0.83rem; }
 
 .tab-2 .center {
   position: relative; }
@@ -221,7 +248,8 @@ main.login {
 .tab-2 .box {
   height: 3.8rem;
   border-top: 1px solid #ddd;
-  padding: 0.41rem 0.22rem; }
+  padding: 0.41rem 0.22rem;
+  background: white; }
   .tab-2 .box .box-left {
     width: 3.5rem;
     display: inline-block; }
@@ -299,7 +327,6 @@ main.login {
         float: right; }
     .order .box .middle {
       padding: 0.133rem 0.573rem;
-      height: 1.867rem;
       background: #f5f5f5; }
       .order .box .middle .left {
         display: inline-block; }
@@ -326,7 +353,6 @@ main.login {
       text-align: right;
       border-bottom: 1px solid #ddd; }
     .order .box .bottom .box-message {
-      height: 0.8rem;
       width: 100%;
       padding: 0.133rem 0.573rem;
       margin-top: 0.1rem; }
@@ -367,12 +393,13 @@ main.login {
         border-radius: 100%;
         border: 0.1rem solid white; }
   .tab-4 .box {
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
     display: block; }
     .tab-4 .box .link {
       height: 1.33rem;
       line-height: 1.33rem;
       padding: 0 0.67rem;
+      border-bottom: 1px solid #eee;
       width: 100%;
       background: white; }
       .tab-4 .box .link .icon {
@@ -382,13 +409,381 @@ main.login {
         color: #000;
         vertical-align: middle;
         font-weight: bold;
-        margin-left: 1rem; }
+        margin-left: 0.2rem; }
       .tab-4 .box .link .icon-right {
         position: absolute;
         right: 0.8rem;
         top: 0.48rem;
         width: 0.227rem; }
     .tab-4 .box .asset {
-      display: block; }
+      display: block;
+      position: relative; }
+    .tab-4 .box .exit {
+      height: 1.33rem;
+      line-height: 1.33rem;
+      padding: 0 0.67rem;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+      background: white;
+      display: block;
+      color: #7b7b7b;
+      text-align: center;
+      font-size: 0.533rem; }
+
+.share .header {
+  display: fix;
+  top: 0;
+  background: #83af9b;
+  height: 1.2rem; }
+  .share .header .navbar,
+  .share .header .subnavbar,
+  .share .header .toolbar {
+    background: #83af9b; }
+  .share .header .navbar,
+  .share .header .toolbar {
+    height: 1.2rem; }
+    .share .header .navbar .left img,
+    .share .header .toolbar .left img {
+      width: 0.267rem; }
+    .share .header .navbar .right img,
+    .share .header .toolbar .right img {
+      width: 0.533rem;
+      margin-right: 0.2rem; }
+    .share .header .navbar .center,
+    .share .header .toolbar .center {
+      color: white;
+      font-family: '苹方'; }
+.share .main {
+  background: #eeeeee;
+  height: 100%; }
+  .share .main .share-top {
+    padding: 0.2rem 0.5rem;
+    background: white; }
+    .share .main .share-top .share-id {
+      font-size: 0.4rem;
+      margin-bottom: 0.2rem; }
+    .share .main .share-top .share-img {
+      text-align: center; }
+      .share .main .share-top .share-img .QR {
+        width: 5.88rem; }
+      .share .main .share-top .share-img .bar {
+        width: 6.53rem;
+        margin-top: 0.4rem; }
+    .share .main .share-top .tips {
+      text-align: center; }
+      .share .main .share-top .tips span {
+        margin-top: 0.2rem;
+        font-size: 0.266rem;
+        display: inline-block;
+        line-height: 0.5rem;
+        padding-left: 0.5rem;
+        background: url(../img/icon-ideal.png) no-repeat;
+        background-size: 0.4rem;
+        background-position: 0rem 0rem; }
+        .share .main .share-top .tips span a {
+          color: #983131; }
+  .share .main .share-box {
+    margin-top: 0.2rem; }
+    .share .main .share-box .title {
+      background: white;
+      line-height: 1rem;
+      padding: 0 0.5rem; }
+      .share .main .share-box .title span {
+        font-size: 0.4rem;
+        padding-left: 0.6rem;
+        background: url("../img/icon-taocan.png") no-repeat;
+        background-size: 0.5rem;
+        background-position: 0 center;
+        line-height: 1rem;
+        display: inline-block; }
+    .share .main .share-box .share-row .row {
+      font-size: 0.27rem;
+      padding: 0.2rem 0.5rem; }
+      .share .main .share-box .share-row .row .price i {
+        font-style: normal;
+        color: #ff0000; }
+
+.detail .header {
+  display: fix;
+  top: 0;
+  background: #83af9b;
+  height: 1.2rem; }
+  .detail .header .navbar,
+  .detail .header .subnavbar,
+  .detail .header .toolbar {
+    background: #83af9b; }
+  .detail .header .navbar,
+  .detail .header .toolbar {
+    height: 1.2rem; }
+    .detail .header .navbar .left img,
+    .detail .header .toolbar .left img {
+      width: 0.267rem; }
+    .detail .header .navbar .right img,
+    .detail .header .toolbar .right img {
+      width: 0.533rem;
+      margin-right: 0.2rem; }
+    .detail .header .navbar .center,
+    .detail .header .toolbar .center {
+      color: white;
+      font-family: '苹方'; }
+.detail .introduce {
+  background: white;
+  padding: 0.3rem 0.5rem;
+  position: relative; }
+  .detail .introduce h2 {
+    font-size: 0.56rem;
+    font-family: "方正少儿简体";
+    color: #0a3020;
+    margin-bottom: 0.1rem; }
+    .detail .introduce h2 .span1 {
+      color: #000000;
+      font-family: "苹方";
+      font-size: 0.373rem; }
+    .detail .introduce h2 .span2 {
+      color: #969696;
+      font-family: "苹方";
+      font-size: 0.293rem; }
+  .detail .introduce p {
+    font-size: 0.28rem;
+    color: #000000;
+    margin: 0.05rem 0; }
+    .detail .introduce p i {
+      font-style: normal;
+      color: #00bdaa; }
+  .detail .introduce .sell {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.3rem; }
+  .detail .introduce .specification {
+    color: #00bdaa;
+    margin-top: 0.3rem; }
+    .detail .introduce .specification p {
+      color: #00bdaa;
+      font-size: 0.3rem;
+      display: inline-block; }
+    .detail .introduce .specification span {
+      color: #00bdaa;
+      font-size: 0.47rem;
+      border: 1px solid #00bdaa;
+      border-radius: 5px;
+      padding: 0 0.1rem; }
+      .detail .introduce .specification span.choosed {
+        color: white;
+        border: 1px solid #00bdaa;
+        background: #00bdaa; }
+.detail .total {
+  border-top: 1px solid #eee;
+  background: white;
+  padding: 0.2rem 0.5rem; }
+  .detail .total h2 {
+    color: #00bdaa;
+    font-size: 0.6rem;
+    display: inline-block;
+    font-family: "方正正大黑简体"; }
+    .detail .total h2 i {
+      font-size: 0.5rem;
+      color: #00bdaa;
+      font-style: normal; }
+  .detail .total span {
+    border: 1px solid #00bdaa;
+    padding: 0.1rem;
+    color: #00bdaa;
+    border-radius: 5px;
+    font-size: 0.1rem;
+    display: inline-block; }
+.detail .parameter {
+  background: white;
+  padding: 0.3rem 0rem;
+  margin-top: 0.2rem; }
+  .detail .parameter .title {
+    font-size: 0.33rem;
+    font-weight: bold;
+    padding: 0rem 0.5rem;
+    margin-bottom: 0.2rem; }
+  .detail .parameter .row {
+    padding: 0.2rem 0.5rem;
+    border-top: 1px solid #eee;
+    font-size: 0.33rem;
+    position: relative; }
+    .detail .parameter .row .col-50 {
+      margin: 0.1rem 0; }
+    .detail .parameter .row input {
+      border: 0;
+      text-align: right;
+      font-size: 0.33rem;
+      padding-right: 3rem; }
+    .detail .parameter .row .right {
+      position: absolute;
+      right: 0.5rem;
+      font-size: 0.33rem;
+      padding-right: 1rem;
+      background: url(../img/icon-right.png) no-repeat;
+      background-size: 0.3rem;
+      background-position: right center; }
+    .detail .parameter .row span img {
+      width: 0.6rem;
+      vertical-align: middle; }
+.detail .button-buy {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  background: linear-gradient(to top, #c40101, #fe3c3c);
+  color: white;
+  font-size: 0.5rem;
+  font-weight: bold; }
+.detail .datang-box {
+  margin-top: 0.2rem;
+  position: relative; }
+  .detail .datang-box img {
+    width: 100%; }
+  .detail .datang-box input {
+    border: 0;
+    border-radius: 5px;
+    padding: 0.1rem 0.4rem;
+    position: absolute;
+    left: 3.5rem;
+    top: 0.4rem;
+    box-shadow: 1px 1px  #eee; }
+  .detail .datang-box button.check {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.8rem;
+    border: 0;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    height: 0.7rem; }
+
+.picker-modal.modal-in {
+  position: fixed; }
+
+.order .title {
+  background: white;
+  padding: 0.2rem 0.5rem; }
+.order .box {
+  border-top: 1px solid #ddd;
+  padding: 0.41rem 0.4rem;
+  background: #f5f5f5;
+  margin-bottom: 0; }
+  .order .box .box-left {
+    width: 2rem;
+    display: inline-block; }
+    .order .box .box-left img {
+      width: 100%; }
+  .order .box .box-right {
+    display: inline-block;
+    width: 7rem;
+    height: 100%;
+    float: right;
+    position: relative; }
+    .order .box .box-right h2 {
+      font-size: 0.373rem;
+      color: #000;
+      display: inline-block;
+      font-weight: bold; }
+    .order .box .box-right p {
+      font-size: 0.266rem;
+      margin-top: 0.3rem; }
+      .order .box .box-right p i {
+        color: #00bdaa;
+        font-style: normal; }
+.order .price {
+  text-align: right;
+  background: white;
+  padding: 0.1rem 0; }
+.order .main {
+  padding: 0.2rem 0.4rem;
+  background: white;
+  margin-top: 0.2rem; }
+  .order .main .row {
+    margin-top: 0.4rem; }
+    .order .main .row i {
+      font-style: normal;
+      color: #5ccbbc; }
+    .order .main .row .span2 {
+      color: #5ccbbc; }
+    .order .main .row .span3 a {
+      color: #983131; }
+  .order .main .title2 {
+    font-size: 0.5rem;
+    margin-top: 0.4rem; }
+  .order .main .logistics img {
+    width: 100%; }
+
+.asset .box {
+  text-align: center;
+  background: white; }
+  .asset .box .asset-img {
+    width: 2.4rem;
+    margin-top: 0.4rem; }
+  .asset .box p {
+    font-size: 0.4rem;
+    margin-top: 0.1rem; }
+  .asset .box span {
+    font-size: 0.7rem;
+    font-weight: bold; }
+.asset .box2 {
+  background: white;
+  margin-top: 0.2rem;
+  font-size: 0.4rem; }
+  .asset .box2 .row {
+    padding: 0.4rem 0.8rem;
+    border-top: 1px solid #eee; }
+    .asset .box2 .row .col2 {
+      text-align: right; }
+.asset .button-cash {
+  text-align: center;
+  margin-top: 1rem; }
+  .asset .button-cash span {
+    width: 8rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: #5ccbbc;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 0.5rem; }
+
+.Withdrawals .card {
+  margin: 0.2rem 0.4rem;
+  padding: 0.2rem .4rem; }
+  .Withdrawals .card #ways {
+    border: 0;
+    text-align: right;
+    font-size: 0.6rem; }
+  .Withdrawals .card .row {
+    margin: 0.2rem 0; }
+    .Withdrawals .card .row span {
+      font-size: 0.6rem; }
+  .Withdrawals .card .rmb {
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+    margin-top: 0.5rem; }
+    .Withdrawals .card .rmb .money {
+      border: 0;
+      font-size: 0.6rem;
+      width: 80%; }
+  .Withdrawals .card .title {
+    font-size: 0.6rem; }
+  .Withdrawals .card .all p {
+    display: inline-block; }
+  .Withdrawals .card .all span {
+    color: #5ccbbc; }
+.Withdrawals .button-cash {
+  text-align: center;
+  margin-top: 1rem; }
+  .Withdrawals .button-cash span {
+    width: 8rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: #5ccbbc;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 0.5rem; }
+.Withdrawals .tips {
+  text-align: center;
+  margin-top: 1rem; }
 
 /*# sourceMappingURL=app.css.map */
