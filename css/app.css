@@ -772,6 +772,8 @@ main.login {
     font-size: 0.6rem; }
   .Withdrawals .card .all p {
     display: inline-block; }
+  .Withdrawals .card .all i {
+    font-style: normal; }
   .Withdrawals .card .all span {
     color: #5ccbbc; }
 .Withdrawals .button-cash {

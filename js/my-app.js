@@ -25,8 +25,24 @@ $("input").on('click',function(){
     __this.scrollIntoViewIfNeeded();
   },200);
 })
-
-
+//全部提现js
+$('.widthdrawals-all').on('click',function(){
+    var all = $('.all p i').text();
+    //console.log(all)
+    $('.rmb .money').val(all);
+});
+//提现限制js
+// $('.rmb .money').bind('input propertychange', function() {  
+//     var all = $('.all p i').text();
+//     var money = $('.rmb .money').val() ;
+    
+//     //console.log(all)
+//     if(money>=all){
+//         $('.rmb .money').val(all);
+//     }else{
+//         $('.rmb .money').val(money);
+//     }
+// }); 
 
 //选择地址
 var pickerDevice = myApp.picker({
@@ -48,7 +64,16 @@ var pickerDevice = myApp.picker({
       }
   ]
 });
-
+//选择提现方式
+var pickerDevice = myApp.picker({
+    input: '#ways',
+    cols: [
+        {
+            textAlign: 'center',
+            values: ['支付宝', '微信']
+        }
+    ]
+  });
 //选择日期
 
 var today = new Date();
