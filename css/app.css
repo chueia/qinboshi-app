@@ -172,17 +172,73 @@ main.login {
         width: 100%; }
       .main .box .goods .price {
         position: absolute;
-        bottom: -0.2rem;
-        right: 3.5rem;
+        bottom: 0rem;
+        right: 3rem;
         font-size: 0.565rem;
         color: #00bdaa;
         font-weight: bold; }
       .main .box .goods .numbers {
         position: absolute;
-        bottom: 0rem;
-        right: 0.5rem;
+        bottom: 0.1rem;
+        right: 0rem;
         color: #585858;
         font-size: 0.284rem; }
+      .main .box .goods .left {
+        width: 40%; }
+      .main .box .goods .right {
+        width: 55%; }
+      .main .box .goods .introduce {
+        background: white;
+        height: -webkit-fill-available;
+        position: relative; }
+        .main .box .goods .introduce img {
+          width: 3.6rem;
+          display: block; }
+        .main .box .goods .introduce h2 {
+          font-size: 0.56rem;
+          font-family: "方正少儿简体";
+          color: #0a3020;
+          margin-bottom: 0.1rem; }
+          .main .box .goods .introduce h2 .span1 {
+            color: #000000;
+            font-family: "苹方";
+            font-size: 0.373rem;
+            font-weight: bold; }
+          .main .box .goods .introduce h2 .span2 {
+            color: #969696;
+            font-family: "苹方";
+            font-size: 0.293rem; }
+        .main .box .goods .introduce p {
+          font-size: 0.28rem;
+          color: #000000;
+          margin: 0.01rem 0; }
+          .main .box .goods .introduce p i {
+            font-style: normal;
+            color: #00bdaa; }
+        .main .box .goods .introduce span i {
+          font-style: normal;
+          color: #00bdaa; }
+        .main .box .goods .introduce .sell {
+          position: absolute;
+          right: 0.5rem;
+          bottom: 0.3rem; }
+        .main .box .goods .introduce .specification {
+          color: #00bdaa;
+          margin-top: 0.3rem; }
+          .main .box .goods .introduce .specification p {
+            color: #00bdaa;
+            font-size: 0.3rem;
+            display: inline-block; }
+          .main .box .goods .introduce .specification span {
+            color: #00bdaa;
+            font-size: 0.47rem;
+            border: 1px solid #00bdaa;
+            border-radius: 5px;
+            padding: 0 0.1rem; }
+            .main .box .goods .introduce .specification span.choosed {
+              color: white;
+              border: 1px solid #00bdaa;
+              background: #00bdaa; }
   .main .box-title {
     padding: 0.267rem 0.267rem;
     margin-top: 0.267rem;
