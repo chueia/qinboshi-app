@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>地址修改</title>
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <!-- 套餐详情页 -->
+    <div class=" detail address-change">
+        <div class="header">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a href="#" class="link" onclick="javascript:history.back(-1)">
+                            <img class="left" src="img/icon-left.png" alt="">
+                        </a>
+                    </div>
+                    <div class="center">地址修改</div>
+                    <div class="right">
+                        保存
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="row">
+                <div class="col-25">
+                    收件人
+                </div>
+                <input class="address_name" type="text" class="col-75" placeholder="收件人">
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    联系电话
+                </div>
+                <input class="address_phone" type="text" class="col-75" placeholder="联系电话">
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    所在地区
+                </div>
+                <input id="picker-dependent" class="address_address" type="text" class="col-75" placeholder="选择地址">
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    所在街道
+                </div>
+                <input class="address_phone" type="text" class="col-75" placeholder="所在街道">
+            </div>
+            <div class="row">
+                <div class="col-100">
+                    <textarea name="" class="address-details" id="" placeholder="详细地址" ></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="delete">删除地址</span>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
