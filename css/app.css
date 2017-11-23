@@ -159,7 +159,8 @@ main.login {
   background: #e0dbe0; }
   .main .box {
     background: white;
-    margin: 0.1rem 0; }
+    margin: 0.1rem 0;
+    padding: 0.1rem 0; }
     .main .box a {
       display: block; }
       .main .box a img {
@@ -171,14 +172,14 @@ main.login {
         width: 100%; }
       .main .box .goods .price {
         position: absolute;
-        bottom: 0.1rem;
+        bottom: -0.2rem;
         right: 3.5rem;
         font-size: 0.565rem;
         color: #00bdaa;
         font-weight: bold; }
       .main .box .goods .numbers {
         position: absolute;
-        bottom: 0.2rem;
+        bottom: 0rem;
         right: 0.5rem;
         color: #585858;
         font-size: 0.284rem; }
@@ -294,7 +295,7 @@ main.login {
       display: inline-block; }
     .tab-2 .box .box-right .price {
       position: absolute;
-      bottom: 0.0rem;
+      bottom: -0.3rem;
       right: 4.15rem;
       font-size: 0.565rem;
       color: #00bdaa;
@@ -304,7 +305,7 @@ main.login {
         font-size: 0.2rem; }
     .tab-2 .box .box-right .numbers {
       position: absolute;
-      bottom: 0.1rem;
+      bottom: -0.1rem;
       right: 0.5rem;
       color: #585858;
       font-size: 0.284rem; }
@@ -318,7 +319,8 @@ main.login {
     margin-bottom: 0.1rem; }
     .order .box .top {
       padding: 0 0.573rem;
-      line-height: 0.6rem; }
+      line-height: 0.6rem;
+      background: white; }
       .order .box .top p {
         font-size: 0.33rem;
         display: inline-block;
@@ -336,7 +338,7 @@ main.login {
         display: inline-block;
         width: 6rem;
         vertical-align: middle;
-        margin-left: 0.5rem; }
+        margin-left: 0.2rem; }
         .order .box .middle .right p {
           font-size: 0.266rem;
           margin-top: 0.2rem; }
@@ -663,7 +665,7 @@ main.login {
   padding: 0.2rem 0.5rem; }
 .order .box {
   border-top: 1px solid #ddd;
-  padding: 0.41rem 0.4rem;
+  padding: 0.41rem 0rem;
   background: #f5f5f5;
   margin-bottom: 0; }
   .order .box .box-left {
@@ -671,6 +673,8 @@ main.login {
     display: inline-block; }
     .order .box .box-left img {
       width: 100%; }
+  .order .box .bottom {
+    background: white; }
   .order .box .box-right {
     display: inline-block;
     width: 7rem;
@@ -785,5 +789,68 @@ main.login {
 .Withdrawals .tips {
   text-align: center;
   margin-top: 1rem; }
+
+.address .box {
+  background: white;
+  padding: 0rem 0rem;
+  font-size: 0.4rem;
+  margin-bottom: 0.4rem; }
+  .address .box .row {
+    padding: 0.2rem 0.6rem;
+    border-bottom: 1px solid #eee; }
+    .address .box .row .right {
+      text-align: right; }
+    .address .box .row div {
+      margin-top: 0.2rem; }
+  .address .box .row2 .item-media {
+    display: inline-block; }
+  .address .box .row2 .item-inner {
+    display: inline-block; }
+  .address .box .row2 div {
+    margin: 0; }
+  .address .box .row2 .right span {
+    margin-left: 0.2rem; }
+  .address .box .row2 .right img {
+    width: 0.48rem;
+    margin-right: 0.1rem; }
+  .address .box label.label-checkbox input[type=checkbox]:checked + .item-media i.icon-form-checkbox, .address .box label.label-checkbox input[type=radio]:checked + .item-media i.icon-form-checkbox {
+    background: #5ccbbc; }
+
+.address-change .right {
+  color: white; }
+.address-change .box {
+  background: white;
+  padding: 00rem 0rem; }
+  .address-change .box .row {
+    border-bottom: 1px solid #eee;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.4rem; }
+    .address-change .box .row input {
+      border: 0;
+      font-size: 0.4rem; }
+    .address-change .box .row textarea {
+      border: 0;
+      resize: none;
+      width: 100%;
+      font-size: 0.4rem; }
+  .address-change .box .delete {
+    margin-top: 0.4rem;
+    display: block;
+    padding: 0.2rem 0.4rem;
+    color: #5ccbbc;
+    font-size: 0.4rem; }
+
+.message1 .box {
+  background: white; }
+  .message1 .box .row {
+    padding: 0.2rem 0.4rem 0.2rem 2rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.35rem; }
+    .message1 .box .row .col-25 {
+      font-size: 0.35rem; }
+    .message1 .box .row .right {
+      text-align: right; }
+    .message1 .box .row .col-100 {
+      font-size: 0.35rem; }
 
 /*# sourceMappingURL=app.css.map */
