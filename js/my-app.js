@@ -44,6 +44,13 @@ $('.widthdrawals-all').on('click',function(){
 //     }
 // }); 
 
+//我的消息删除消息
+$('.message1 .delete').click(function(){
+    $(this).parent().parent().parent().remove();
+})
+
+
+
 //选择地址
 var pickerDevice = myApp.picker({
   input: '#address',

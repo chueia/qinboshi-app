@@ -843,7 +843,8 @@ main.login {
     font-size: 0.4rem; }
 
 .message1 .box {
-  background: white; }
+  background: white;
+  margin-bottom: 0.2rem; }
   .message1 .box .row {
     padding: 0.2rem 0.4rem 0.2rem 2rem;
     border-bottom: 1px solid #eee;
