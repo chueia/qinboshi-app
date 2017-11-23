@@ -224,7 +224,7 @@ main.login {
                 font-size: 0.284rem;
             }
             .left{
-                width:45%;
+                width:43%;
             }
             .right{
                 width:55%;
@@ -248,14 +248,18 @@ main.login {
                     display: block;
                 }
                 h2{
-                    font-size: 0.56rem;
+                    font-size: 0.5rem;
                     font-family: "方正少儿简体";
                     color:#0a3020;
                     margin-bottom:0.1rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    padding-right: 0.7rem;
                     .span1{
                         color: #000000;
                         font-family: "苹方";
-                        font-size: 0.373rem;
+                        font-size: 0.3rem;
                         font-weight: bold;
                     }
                     .span2{
