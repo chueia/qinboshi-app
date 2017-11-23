@@ -224,13 +224,23 @@ main.login {
                 font-size: 0.284rem;
             }
             .left{
-                width:40%;
+                width:45%;
             }
             .right{
-                width:55%
+                width:55%;
+                &.bg1{
+                    background: url(../img/bg-1.png) no-repeat;
+                    background-size: 80%;
+                    background-position: right 0rem;
+                }
+                &.bg2{
+                    background: url(../img/bg-2.png) no-repeat;
+                    background-size: 70%;
+                    background-position: right 1rem;
+                }
             }
             .introduce{
-                background: white;
+                
                 height: -webkit-fill-available;
                 position: relative;
                 img{

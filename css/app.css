@@ -184,11 +184,18 @@ main.login {
         color: #585858;
         font-size: 0.284rem; }
       .main .box .goods .left {
-        width: 40%; }
+        width: 45%; }
       .main .box .goods .right {
         width: 55%; }
+        .main .box .goods .right.bg1 {
+          background: url(../img/bg-1.png) no-repeat;
+          background-size: 80%;
+          background-position: right 0rem; }
+        .main .box .goods .right.bg2 {
+          background: url(../img/bg-2.png) no-repeat;
+          background-size: 70%;
+          background-position: right 1rem; }
       .main .box .goods .introduce {
-        background: white;
         height: -webkit-fill-available;
         position: relative; }
         .main .box .goods .introduce img {
