@@ -184,7 +184,7 @@ main.login {
         color: #585858;
         font-size: 0.284rem; }
       .main .box .goods .left {
-        width: 45%; }
+        width: 43%; }
       .main .box .goods .right {
         width: 55%; }
         .main .box .goods .right.bg1 {
@@ -202,14 +202,18 @@ main.login {
           width: 3.6rem;
           display: block; }
         .main .box .goods .introduce h2 {
-          font-size: 0.56rem;
+          font-size: 0.5rem;
           font-family: "方正少儿简体";
           color: #0a3020;
-          margin-bottom: 0.1rem; }
+          margin-bottom: 0.1rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding-right: 0.7rem; }
           .main .box .goods .introduce h2 .span1 {
             color: #000000;
             font-family: "苹方";
-            font-size: 0.373rem;
+            font-size: 0.3rem;
             font-weight: bold; }
           .main .box .goods .introduce h2 .span2 {
             color: #969696;
