@@ -1143,6 +1143,16 @@ main.login {
 }
 
 .address{
+    .button-buy{
+        width:100%;
+        height:1rem;
+        line-height: 1rem;
+        text-align: center;
+        background: linear-gradient(to top,#c40101,#fe3c3c);
+        color:white;
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
     .box{
         background: white;
         padding:0rem 0rem;

@@ -53,6 +53,7 @@ $('.message1 .delete').click(function(){
 
 //选择地址
 var pickerDevice = myApp.picker({
+    
   input: '#address',
   cols: [
       {
@@ -195,7 +196,7 @@ var pickerDependent = myApp.picker({
     input: '#picker-dependent',
     rotateEffect: true,
     formatValue: function (picker, values) {
-        return values[1];
+        return values+values[1];
     },
     cols: [
         {
