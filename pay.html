@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>支付订单</title>
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+
+    <div class="statusbar-overlay"></div>
+    <div class="views">
+        <div class="view view-main">
+            <div class="page">
+                <div class="page-content pull-to-refresh-content">
+                    <div class="pull-to-refresh-layer">
+                        <div class="preloader"></div>
+                        <div class="pull-to-refresh-arrow"></div>
+                    </div>
+                    <div class=" detail pay">
+                        <div class="header">
+                            <div class="navbar">
+                                <div class="navbar-inner">
+                                    <div class="left">
+                                        <a href="#" class="link" onclick="javascript:history.back(-1)">
+                                            <img class="left" src="img/icon-left.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="center">支付订单</div>
+                                    <div class="right">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>订单详情：xxxxxxxxxxxxxx</p>
+                            <p>订单金额￥：100.00</p>
+                        </div>
+                        <div class="title">
+                            选择支付方式
+                        </div>
+                        <div class="box">
+                            <div class="list-block">
+                                <ul>
+
+                                    <li>
+                                        <label class="label-radio item-content">
+                                            <input type="radio" name="my-radio" value="Books" checked="checked">
+                                            <div class="item-inner">
+                                                <div class="item-title">
+                                                    <img src="./img/wx.png" alt=""> 微信支付</div>
+                                            </div>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="label-radio item-content">
+                                            <input type="radio" name="my-radio" value="Movies">
+                                            <div class="item-inner">
+                                                <div class="item-title">
+                                                    <img src="./img/ali.png" alt="">支付宝支付</div>
+                                            </div>
+                                        </label>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="button-buy">
+                            <span>立即支付</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="./js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/framework7.min.js"></script>
+        <script type="text/javascript" src="js/my-app.js"></script>
+
+
+        <script>
+            var myApp = new Framework7();
+            var $$ = Dom7;
+            // 下拉刷新页面
+            var ptrContent = $$('.pull-to-refresh-content');
+            // 添加'refresh'监听器
+            ptrContent.on('refresh', function (e) {
+                // 模拟2s的加载过程
+                setTimeout(function () {
+                    myApp.pullToRefreshDone();
+                }, 2000);
+            });
+
+            $(document).on('click', '.row2 input', function () {
+                alert($(this))
+            })
+        </script>
+
+</body>
+
+</html>
