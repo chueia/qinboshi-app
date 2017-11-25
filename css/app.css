@@ -932,4 +932,18 @@ main.login {
     .message1 .box .row .col-100 {
       font-size: 0.35rem; }
 
+.pay .box {
+  background: white;
+  padding: 0.4rem 0.4rem;
+  font-size: 0.4rem; }
+  .pay .box p {
+    margin-top: 0.2rem; }
+.pay .title {
+  padding: 0.4rem 0.4rem;
+  font-size: 0.4rem; }
+.pay .item-title img {
+  width: 0.8rem;
+  vertical-align: middle;
+  margin-right: 0.4rem; }
+
 /*# sourceMappingURL=app.css.map */
